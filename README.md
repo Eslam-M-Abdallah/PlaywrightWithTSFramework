@@ -22,20 +22,6 @@ This framework provides a modular, scalable, and maintainable structure for web 
 🔄 CI/CD ready (GitHub Actions, Jenkins, or Azure Pipelines)
 
 
-**Project Structure :**
-
-PlaywrightWithTSFramework/
-├── tests/                    # Test files (.spec.ts)
-├── pages/                    # Page Object Model files
-├── fixtures/                 # Common setup & custom fixtures
-├── utils/                    # Reusable utilities (helpers, data, constants)
-├── config/                   # Environment configurations
-├── reports/                  # Allure or HTML reports
-├── playwright.config.ts      # Playwright configuration file
-├── package.json              # Project dependencies and scripts
-└── README.md                 # Project documentation
-
-
 **📂 Project Structure**
 
 PlaywrightWithTSFramework/
