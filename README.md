@@ -101,6 +101,6 @@ Integrate the framework with your CI/CD pipeline for continuous testing.
 
 Eslam Abdallah
 Quality Control Automation Engineer @ Kashier
-📧 eslamseaf@gmail.com
+📧 eslamseaf1@gmail.com
 
 Linkedin : https://www.linkedin.com/in/eslam-mohamed-48711914b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app 
