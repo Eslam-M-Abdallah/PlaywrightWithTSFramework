@@ -24,7 +24,7 @@ export default class commonUtils {
      */
     public encryptData(data: string) {
         const encryptedData = cryptoJS.AES.encrypt(data, this.secretKey).toString()
-        console.log(`Encrypted Data Value = ${encryptedData}`)
+        //console.log(`Encrypted Data Value = ${encryptedData}`)
         return encryptedData
     }
 
@@ -36,7 +36,7 @@ export default class commonUtils {
     public decryptData(encdata : string)
     {
         const decryptedData = cryptoJS.AES.decrypt(encdata , this.secretKey).toString(cryptoJS.enc.Utf8)
-        console.log(`Decrypted Data Value = ${decryptedData}`)
+        //console.log(`Decrypted Data Value = ${decryptedData}`)
         return decryptedData 
     }
 
