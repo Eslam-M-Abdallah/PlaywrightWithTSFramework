@@ -138,7 +138,7 @@ test("[Restful-booker > Booking]Verify That The User Can Delete Exist Booking ID
             })
         expect(deletBookingIdResp.status()).toBe(201)
         expect(deletBookingIdResp.statusText()).toBe("Created")
-        const getBookingIDResp = await request.get(`${apiPathData.booking_Path}/${restfulBookerApiModuleData.Booking_Id5}`)
+        const getBookingIDResp = await request.get(`${apiPathData.booking_Path}/${restfulBookerApiModuleData.Booking_Id3}`)
         expect(getBookingIDResp.status()).toBe(404)
         expect(getBookingIDResp.statusText()).toBe("Not Found")
         //Test 
