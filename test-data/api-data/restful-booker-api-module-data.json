@@ -1,0 +1,42 @@
+{
+    "Content_Type" : "application/json; charset=utf-8" ,
+    "Booking_Id" : "1" ,
+    "Booking_Id2" : "2" ,
+    "Booking_Id6" : "6" ,
+    "User_First_Name" : "James" ,
+    "Create_Booking" : {
+    "firstname" : "Eslam",
+    "lastname" : "Mohamed",
+    "totalprice" : 111,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2018-01-01",
+        "checkout" : "2019-01-01"
+    },
+    "additionalneeds" : "Breakfast"
+} ,
+   "Update_Booking" : {
+    "firstname" : "Islam",
+    "lastname" : "Selem",
+    "totalprice" : 1000,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2018-01-01",
+        "checkout" : "2019-01-01"
+    },
+    "additionalneeds" : "Dinner"
+} ,
+  "Partially_Upate_Booking" : {
+    "firstname" : "ESLAM",
+    "lastname" : "SELEM"
+},
+  "Partially_Updated_ID" : {                                                                                                          
+  "firstname": "ESLAM",
+  "lastname": "SELEM",
+  "totalprice": 1000,
+  "depositpaid": true,
+  "bookingdates": { "checkin": "2018-01-01", "checkout": "2019-01-01" },
+  "additionalneeds": "Dinner"
+}
+
+}

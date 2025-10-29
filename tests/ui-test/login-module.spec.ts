@@ -1,5 +1,5 @@
-import { test, expect } from "../fixtures/hooks-fixtures"
-import loginModuleData from "../test-data/login-module-data.json"
+import { test, expect } from "../../fixtures/hooks-fixtures"
+import loginModuleData from "../../test-data/ui-data/login-module-data.json"
 
 /**
  * Exclude This Test File From The Authentication State Reuse
