@@ -9,6 +9,21 @@ trigger:
 pool:
   vmImage: ubuntu-latest #windows-latest #macos-latest
 
+parameters:
+  - name: SCRIPT_KEY_2
+    displayName: "Select SCript Key"
+    type: string
+    default: "env_demo_ui_cr_hl_api_noVisual"
+    values:
+      - env_demo_ui_cr_hl_api_noVisual
+      - env_demo
+      - env_demo_cr_hl
+      - env_demo_fr_hl
+      - env_demo_cr_hd_vi
+      - env_demo_cr_hd_lf
+      - env_demo_api
+
+
 steps:
 - task: NodeTool@0
   inputs:
@@ -21,5 +36,6 @@ steps:
 - script: npx playwright install --with-deps
   displayName: 'Install The Playwright Browsers'
 
-- script: SECRET_KEY=$(SECRET_KEY) npm run $(SCRIPT_KEY) 
+#- script: SECRET_KEY=$(SECRET_KEY) npm run $(SCRIPT_KEY) 
+- script: SECRET_KEY=$(SECRET_KEY) npm run ${{parameters.SCRIPT_KEY_2}}
   displayName: 'Run All The Test Scripts At The Available Browsers'
