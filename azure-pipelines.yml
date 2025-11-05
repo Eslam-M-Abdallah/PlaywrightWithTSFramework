@@ -39,3 +39,17 @@ steps:
 #- script: SECRET_KEY=$(SECRET_KEY) npm run $(SCRIPT_KEY) 
 - script: SECRET_KEY=$(SECRET_KEY) npm run ${{parameters.SCRIPT_KEY_2}}
   displayName: 'Run All The Test Scripts At The Available Browsers'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'playwright-report'
+    artifact: 'Playwright HTML Report'
+    publishLocation: 'pipeline'
+  condition: always()
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**test-results/junit-Report.xml'
+    testRunTitle: 'Playwright JUNIT Report'
+  condition: always()
