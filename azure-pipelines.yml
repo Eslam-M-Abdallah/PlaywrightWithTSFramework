@@ -7,7 +7,7 @@
 #- main
 
 schedules:
-  - cron: "40 14 6 11 5"
+  - cron: "55 14 6 11 5"
     displayName: "Daily Automatic Pipline Run"
     branches:
       include:
