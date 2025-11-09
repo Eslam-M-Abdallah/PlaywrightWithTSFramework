@@ -13,9 +13,9 @@ export const test = baseTest.extend<commonFixtures>(
     {
         commonUtils: async ({ }, use) => {
             const commonUtilsObj = new commonUtils
-            use(commonUtilsObj)
+            await use(commonUtilsObj)
         },
         commonAPiUtils: async ({ request }, use) => {
-            use(new CommonApiUtils(request))
+            await use(new CommonApiUtils(request))
         }
     })
