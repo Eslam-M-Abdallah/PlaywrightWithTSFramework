@@ -10,30 +10,34 @@
     "env_demo_fr_hd": "cross-env ENV_NAME=demo npx playwright test --project=firefox --headed",
     "env_demo_cr_hl": "cross-env ENV_NAME=demo npx playwright test --project=chromium",
     "env_demo_fr_hl": "cross-env ENV_NAME=demo npx playwright test --project=firefox",
-    "env_demo_ui":"cross-env ENV_NAME=demo npx playwright test --ui",
-    "env_demo_cr_hd_@login_Module_Tag" : "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@login_Module",
-    "env_demo_cr_hd_@Pim_Module_Tag" : "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@Pim_Module",
-    "env_demo_cr_hd_@login_Module_Tag_@Negative_Scenario" : "cross-env ENV_NAME=demo npx playwright test login-module.spec.ts --project=chromium --headed --grep=@negative_Scenario ",
-    "env_demo_cr_hd_@login_Module_Tag_@Positive_Scenario" : "cross-env ENV_NAME=demo npx playwright test login-module.spec.ts --project=chromium --headed --grep=@Positive_Scenario ",
-    "env_demo_cr_hd_vi" : "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@Visual",
-    "env_demo_cr_hd_lf" : "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --last-failed",
-    "env_demo_api" : "cross-env ENV_NAME=demo npx playwright test --project=apiTesting",
-    "env_dev_api" : "cross-env ENV_NAME=dev npx playwright test --project=apiTesting",
-    "env_demo_ui_cr_hd_api" : "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --project=apiTesting",
-    "env_demo_ui_cr_hl_api_noVisual" : "cross-env ENV_NAME=demo npx playwright test --project=chromium --grep-invert=@Visual --project=apiTesting"
+    "env_demo_ui": "cross-env ENV_NAME=demo npx playwright test --ui",
+    "env_demo_cr_hd_@login_Module_Tag": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@login_Module",
+    "env_demo_cr_hd_@Pim_Module_Tag": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@Pim_Module",
+    "env_demo_cr_hd_@login_Module_Tag_@Negative_Scenario": "cross-env ENV_NAME=demo npx playwright test login-module.spec.ts --project=chromium --headed --grep=@negative_Scenario ",
+    "env_demo_cr_hd_@login_Module_Tag_@Positive_Scenario": "cross-env ENV_NAME=demo npx playwright test login-module.spec.ts --project=chromium --headed --grep=@Positive_Scenario ",
+    "env_demo_cr_hd_vi": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@Visual",
+    "env_demo_cr_hd_lf": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --last-failed",
+    "env_demo_api": "cross-env ENV_NAME=demo npx playwright test --project=apiTesting",
+    "env_dev_api": "cross-env ENV_NAME=dev npx playwright test --project=apiTesting",
+    "env_demo_ui_cr_hd_api": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --project=apiTesting",
+    "env_demo_ui_cr_hl_api_noVisual": "cross-env ENV_NAME=demo npx playwright test --project=chromium --grep-invert=@Visual --project=apiTesting",
+    "env_demo_cr_hd_@OTPtest" : "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@OTPtest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.55.1",
+    "@playwright/test": "^1.56.1",
+    "@types/cheerio": "^0.22.35",
     "@types/crypto-js": "^4.2.2",
     "@types/node": "^24.7.0"
   },
   "dependencies": {
+    "cheerio": "^1.1.2",
     "cross-env": "^10.1.0",
     "crypto-js": "^4.2.0",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "mailosaur": "^9.0.0"
   }
 }
