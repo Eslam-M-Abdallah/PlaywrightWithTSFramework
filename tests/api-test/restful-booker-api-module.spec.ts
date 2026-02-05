@@ -114,6 +114,7 @@ test("[Restful-booker > Booking]Verify That The User Can Partially Update Exist 
         expect(PartiallyUpdateBookingIdResp.status()).toBe(200)
         expect(PartiallyUpdateBookingIdJsonResp).toMatchObject(restfulBookerApiModuleData.Partially_Updated_ID)
         expect(PartiallyUpdateBookingIdJsonResp.firstname).toMatch(restfulBookerApiModuleData.Partially_Upate_Booking.firstname)
+        expect(PartiallyUpdateBookingIdJsonResp.lastname).toMatch(restfulBookerApiModuleData.Partially_Upate_Booking.lastname)
         
     }
 )
@@ -129,7 +130,7 @@ test("[Restful-booker > Booking]Verify That The User Can Delete Exist Booking ID
     } , async({request , commonAPiUtils})=>
     {
         const tokenVal = await commonAPiUtils.createToken()
-        const deletBookingIdResp = await request.delete(`${apiPathData.booking_Path}/${restfulBookerApiModuleData.Booking_Id6}`,
+        const deletBookingIdResp = await request.delete(`${apiPathData.booking_Path}/${restfulBookerApiModuleData.Booking_Id3}`,
             {
                 headers : 
                 {

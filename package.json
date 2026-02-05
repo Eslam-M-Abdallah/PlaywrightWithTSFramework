@@ -13,6 +13,7 @@
     "env_demo_ui": "cross-env ENV_NAME=demo npx playwright test --ui",
     "env_demo_cr_hd_@login_Module_Tag": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@login_Module",
     "env_demo_cr_hd_@Pim_Module_Tag": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@Pim_Module",
+    "env_demo_cr_hd_@Recruitment_Module_Tag" : "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@Recruitment_Module",
     "env_demo_cr_hd_@login_Module_Tag_@Negative_Scenario": "cross-env ENV_NAME=demo npx playwright test login-module.spec.ts --project=chromium --headed --grep=@negative_Scenario ",
     "env_demo_cr_hd_@login_Module_Tag_@Positive_Scenario": "cross-env ENV_NAME=demo npx playwright test login-module.spec.ts --project=chromium --headed --grep=@Positive_Scenario ",
     "env_demo_cr_hd_vi": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@Visual",
