@@ -4,6 +4,7 @@ import { DashboardPage } from "../pages/DashboardPage"
 import { UserPage } from "../pages/UserPage"
 import { SideMenuPage } from "../pages/SideMenuPage"
 import { PimPage } from "../pages/PimPage"
+import { RecruitmentPage } from "../pages/RecruitmentPage"
 
 type pomFixturesType =
     {
@@ -11,7 +12,8 @@ type pomFixturesType =
         dasboardPage: DashboardPage
         userPage: UserPage
         sideMenuPage: SideMenuPage
-        pimPage : PimPage
+        pimPage: PimPage
+        recruitmentPage: RecruitmentPage
     }
 
 export const test = baseTest.extend<pomFixturesType>(
@@ -31,8 +33,11 @@ export const test = baseTest.extend<pomFixturesType>(
         sideMenuPage: async ({ page }, use) => {
             await use(new SideMenuPage(page))
         },
-        pimPage : async({page} ,use)=>
-            {
-                await use(new PimPage(page))
-            }
+        pimPage: async ({ page }, use) => {
+            await use(new PimPage(page))
+        },
+        recruitmentPage: async ({ page }, use) => {
+            await use(new RecruitmentPage(page))
+        },
+
     })
