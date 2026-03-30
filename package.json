@@ -22,7 +22,15 @@
     "env_dev_api": "cross-env ENV_NAME=dev npx playwright test --project=apiTesting",
     "env_demo_ui_cr_hd_api": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --project=apiTesting",
     "env_demo_ui_cr_hl_api_noVisual": "cross-env ENV_NAME=demo npx playwright test --project=chromium --grep-invert=@Visual --project=apiTesting",
-    "env_demo_cr_hd_@OTPtest" : "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@OTPtest"
+    "env_demo_cr_hd_@OTPtest" : "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed --grep=@OTPtest",
+    "env_staging_cr_hl_@Password_Criteria": "cross-env ENV_NAME=staging npx playwright test --project=chromium --grep=@Password_Criteria",
+    "env_staging_cr_hd_@Password_Criteria": "cross-env ENV_NAME=staging npx playwright test --project=chromium --headed --grep=@Password_Criteria",
+    "env_staging_cr_hd_@Password_Criteria_Negative": "cross-env ENV_NAME=staging npx playwright test password-criteria-updates.spec.ts --project=chromium --headed --grep=@Negative_Scenario",
+    "env_staging_cr_hd_@Password_Criteria_Positive": "cross-env ENV_NAME=staging npx playwright test password-criteria-updates.spec.ts --project=chromium --headed --grep=@Positive_Scenario",
+    "env_staging_cr_hd_password_criteria_spec": "cross-env ENV_NAME=staging npx playwright test password-criteria-updates.spec.ts --project=chromium --headed",
+    "env_staging_fr_hd_@Password_Criteria": "cross-env ENV_NAME=staging npx playwright test --project=firefox --headed --grep=@Password_Criteria",
+    "env_staging_cr_hd_password_criteria_lf": "cross-env ENV_NAME=staging npx playwright test password-criteria-updates.spec.ts --project=chromium --headed --last-failed",
+    "env_staging_ui_@Password_Criteria": "cross-env ENV_NAME=staging npx playwright test --ui --grep=@Password_Criteria"
   },
   "keywords": [],
   "author": "",
