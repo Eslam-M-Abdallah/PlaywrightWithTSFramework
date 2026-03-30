@@ -13,5 +13,5 @@ export const test = baseTest.extend<otpUtilsType>(
 
   })
 
-export { expect } from "@playwright/test"
+export { expect , Page , Locator } from "@playwright/test"
 

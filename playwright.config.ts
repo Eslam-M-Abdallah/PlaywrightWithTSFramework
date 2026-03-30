@@ -25,7 +25,7 @@ export default defineConfig({
   workers: process.env.CI ? 3 : 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   //reporter: [['html', { open: 'always' }]], // For Local RUn
-  reporter: [['html', { open: 'always' }] , ['junit' , {outputFile : 'test-results/junit-Report.xml'}]],  //For The Ci Pipeline Run
+  reporter: [['html', { open: 'always' }], ['junit', { outputFile: 'test-results/junit-Report.xml' }]],  //For The Ci Pipeline Run
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   expect:
   {
@@ -55,24 +55,27 @@ export default defineConfig({
 
     {
       name: "Setup",
-      testMatch: 'global.setup.ts'
+      testMatch: 'global.setup.ts',
+      use: {
+        userAgent: 'KASHIER_PAYMENT_INTEGRATION_TESTS_DEV'
+      }
     },
     {
       name: 'chromium',
       dependencies: ['Setup'],
-      use: { ...devices['Desktop Chrome'], storageState: './Playwright/.auth/auth1.json' },
+      use: { ...devices['Desktop Chrome'], storageState: './Playwright/.auth/auth1.json', userAgent: 'KASHIER_PAYMENT_INTEGRATION_TESTS_DEV', },
     },
 
     {
       name: 'firefox',
       dependencies: ['Setup'],
-      use: { ...devices['Desktop Firefox'], storageState: './Playwright/.auth/auth1.json' }, //Load The Auth State
+      use: { ...devices['Desktop Firefox'], storageState: './Playwright/.auth/auth1.json', userAgent: 'KASHIER_PAYMENT_INTEGRATION_TESTS_DEV', }, //Load The Auth State
     },
 
     {
       name: 'webkit',
       dependencies: ['Setup'],
-      use: { ...devices['Desktop Safari'], storageState: './Playwright/.auth/auth1.json' },
+      use: { ...devices['Desktop Safari'], storageState: './Playwright/.auth/auth1.json', userAgent: 'KASHIER_PAYMENT_INTEGRATION_TESTS_DEV', },
     },
 
     {
