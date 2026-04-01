@@ -1,0 +1,19 @@
+{
+    "Content_Type": "application/json",
+    "lockout_Test_Email": "hyfuzizi@cyclelove.cc",
+    "lockout_Test_Password": "Password500$$",
+    "lockout_Test_Email_2": "e4szws6xwi@xkxkud.com",
+    "lockout_Test_Password_2": "Password500$$",
+    "lockout_Test_Email_3": "lg3x206u1m@xkxkud.com",
+    "lockout_Test_Password_3": "Password500$$",
+    "account_Locked_Error": "Account has been deactivated due to five consecutive incorrect password attempts. please check your email to verify your identity and reactivate your account",
+    "rate_Limit_Error": "Account has been deactivated due to five consecutive incorrect password attempts. please check your email to verify your identity and reactivate your account",
+    "temp_Email_Admin_Reset": "z2j5x4qkrd@wnbaldwy.com",
+    "temp_Password_Admin_Reset": "Password500$$",
+    "admin_Reset_Force_Change_Error": "You need to reset your password. a new link has been sent to your email.",
+    "wrong_Password_Attempt_1": "WrongPass@001",
+    "wrong_Password_Attempt_2": "WrongPass@002",
+    "wrong_Password_Attempt_3": "WrongPass@003",
+    "wrong_Password_Attempt_4": "WrongPass@004",
+    "wrong_Password_Attempt_5": "WrongPass@005"
+}

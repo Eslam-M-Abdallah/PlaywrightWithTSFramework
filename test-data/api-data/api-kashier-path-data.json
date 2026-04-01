@@ -1,0 +1,13 @@
+{
+    "authenticate_Path": "/v2/identity/authenticate",
+    "otp_Generate_Signup_Path": "/v2/identity/otp/generate?operation=signup",
+    "otp_Verify_Signup_Path": "/v2/identity/otp/verify?operation=signup",
+    "resend_OTP_Signup_Path": "/v2/identity/otp/generate?operation=signup",
+    "register_Path": "/v2/identity/register?operation=signup",
+    "reset_Password_Path": "/v2/identity/reset-password",
+    "otp_Verify_Reset_Password_Path": "/v2/identity/otp/verify?operation=resetPassword",
+    "reset_Password_Verify_Token_Path": "/v2/identity/reset-password/verify-token",
+    "change_Password_Path": "/v2/identity/change-password",
+    "onboard_Path": "https://test-api.staging.payformance.io/v2/merchants/onborad",
+    "dashboard_Path": "https://test-api.staging.payformance.io/v2/aggregator/dashboard?currency=EGP&startDate=2026-03-02T00:00:00.000Z&endDate=2026-03-30T23:59:59.999Z&page=1&pageSize=10"
+}
