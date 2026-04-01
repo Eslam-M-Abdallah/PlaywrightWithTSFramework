@@ -88,7 +88,8 @@ export default defineConfig({
         {
           'Accept': 'application/json',
           "Content-Type": "application/json",
-          "Authorization": "Basic YWRtaW46cGFzc3dvcmQxMjM="
+          "Authorization": "Basic YWRtaW46cGFzc3dvcmQxMjM=",
+          "User-Agent": "KASHIER_PAYMENT_INTEGRATION_TESTS_DEV"
         },
       }
     }
